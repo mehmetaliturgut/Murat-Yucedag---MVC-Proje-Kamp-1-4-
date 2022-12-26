@@ -56,6 +56,9 @@
     <Compile Include="Abstract\IContactDAL.cs" />
     <Compile Include="Abstract\IContentDAL.cs" />
     <Compile Include="Abstract\IHeadingDAL.cs" />
+    <Compile Include="Abstract\IImageFileDAL.cs" />
+    <Compile Include="Abstract\IMessageDAL.cs" />
+    <Compile Include="Abstract\IMySkillDAL.cs" />
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDAL.cs" />
     <Compile Include="Concrete\Context.cs" />
@@ -65,10 +68,53 @@
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDAL.cs" />
     <Compile Include="EntityFramework\EfHeadingDAL.cs" />
+    <Compile Include="EntityFramework\EfImageFileDAL.cs" />
+    <Compile Include="EntityFramework\EfMessageDAL.cs" />
+    <Compile Include="EntityFramework\EfMySkillDAL.cs" />
     <Compile Include="EntityFramework\EfWriterDAL.cs" />
     <Compile Include="Migrations\202212222210047_mig1.cs" />
     <Compile Include="Migrations\202212222210047_mig1.designer.cs">
       <DependentUpon>202212222210047_mig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212241440507_mig_writer_edit.cs" />
+    <Compile Include="Migrations\202212241440507_mig_writer_edit.designer.cs">
+      <DependentUpon>202212241440507_mig_writer_edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212251320160_mig_imagesizechange.cs" />
+    <Compile Include="Migrations\202212251320160_mig_imagesizechange.designer.cs">
+      <DependentUpon>202212251320160_mig_imagesizechange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212251342190_mig_Writeraddstatus.cs" />
+    <Compile Include="Migrations\202212251342190_mig_Writeraddstatus.designer.cs">
+      <DependentUpon>202212251342190_mig_Writeraddstatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212251432486_mig_Contentstatusadd.cs" />
+    <Compile Include="Migrations\202212251432486_mig_Contentstatusadd.designer.cs">
+      <DependentUpon>202212251432486_mig_Contentstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212251435572_mig_headingsstatusadd.cs" />
+    <Compile Include="Migrations\202212251435572_mig_headingsstatusadd.designer.cs">
+      <DependentUpon>202212251435572_mig_headingsstatusadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212252209342_mig_addmessageclass.cs" />
+    <Compile Include="Migrations\202212252209342_mig_addmessageclass.designer.cs">
+      <DependentUpon>202212252209342_mig_addmessageclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212261312065_mig_ContactaddDate.cs" />
+    <Compile Include="Migrations\202212261312065_mig_ContactaddDate.designer.cs">
+      <DependentUpon>202212261312065_mig_ContactaddDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212261430348_mig_addImageFileclass.cs" />
+    <Compile Include="Migrations\202212261430348_mig_addImageFileclass.designer.cs">
+      <DependentUpon>202212261430348_mig_addImageFileclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212261541382_mig_addadminclass.cs" />
+    <Compile Include="Migrations\202212261541382_mig_addadminclass.designer.cs">
+      <DependentUpon>202212261541382_mig_addadminclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212261941379_mig_SkillTable.cs" />
+    <Compile Include="Migrations\202212261941379_mig_SkillTable.designer.cs">
+      <DependentUpon>202212261941379_mig_SkillTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +132,36 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202212222210047_mig1.resx">
       <DependentUpon>202212222210047_mig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212241440507_mig_writer_edit.resx">
+      <DependentUpon>202212241440507_mig_writer_edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212251320160_mig_imagesizechange.resx">
+      <DependentUpon>202212251320160_mig_imagesizechange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212251342190_mig_Writeraddstatus.resx">
+      <DependentUpon>202212251342190_mig_Writeraddstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212251432486_mig_Contentstatusadd.resx">
+      <DependentUpon>202212251432486_mig_Contentstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212251435572_mig_headingsstatusadd.resx">
+      <DependentUpon>202212251435572_mig_headingsstatusadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212252209342_mig_addmessageclass.resx">
+      <DependentUpon>202212252209342_mig_addmessageclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212261312065_mig_ContactaddDate.resx">
+      <DependentUpon>202212261312065_mig_ContactaddDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212261430348_mig_addImageFileclass.resx">
+      <DependentUpon>202212261430348_mig_addImageFileclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212261541382_mig_addadminclass.resx">
+      <DependentUpon>202212261541382_mig_addadminclass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212261941379_mig_SkillTable.resx">
+      <DependentUpon>202212261941379_mig_SkillTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
