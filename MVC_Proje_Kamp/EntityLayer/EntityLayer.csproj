@@ -61,6 +61,7 @@
     <Compile Include="Concrete\Message.cs" />
     <Compile Include="Concrete\MySkill.cs" />
     <Compile Include="Concrete\Writer.cs" />
+    <Compile Include="Encryption.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

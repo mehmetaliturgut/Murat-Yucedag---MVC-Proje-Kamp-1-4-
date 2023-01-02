@@ -1,0 +1,25 @@
+﻿@model EntityLayer.Concrete.MySkill
+@{
+    ViewBag.Title = "EditSkill";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>EditSkill</h2>
+
+@using (Html.BeginForm("EditSkill", "MySkill", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.HiddenFor(x => x.SkillID, new { @class = "form-control" })
+
+        <br />
+        @Html.Label("Yetenek Adı")
+        @Html.TextBoxFor(x => x.SkillName, new { @class = "form-control" })
+
+        <br />
+        @Html.Label("Oran")
+        @Html.TextBoxFor(x => x.SkillRate, new { @class = "form-control" })
+
+        <br /><br />
+        <button class="btn btn-info">Güncelle</button>
+    </div>
+}

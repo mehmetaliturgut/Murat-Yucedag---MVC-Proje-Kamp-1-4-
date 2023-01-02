@@ -96,3 +96,7 @@ C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\Sys
 C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\FluentValidation.xml
 C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\PagedList.dll
+C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\PagedList.Mvc.dll
+C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\PagedList.xml
+C:\Users\Mehmet Ali\Desktop\MVC_ProjeKampi\MVC_Proje_Kamp\MVC_Proje_Kamp\bin\PagedList.Mvc.xml

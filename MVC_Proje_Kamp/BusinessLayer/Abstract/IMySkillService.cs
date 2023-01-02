@@ -10,7 +10,10 @@ namespace BusinessLayer.Abstract
     public interface IMySkillService
     {
         List<MySkill> GetList();
-        
-        
+        void SkillAdd(MySkill skill);
+        MySkill GetByID(int id);
+        void SkillDelete(MySkill skill);
+        void SkillUpdate(MySkill skill);
+
     }
 }

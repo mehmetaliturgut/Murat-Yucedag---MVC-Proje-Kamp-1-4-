@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IAboutDAL.cs" />
+    <Compile Include="Abstract\IAdminDAL.cs" />
     <Compile Include="Abstract\ICategoryDAL.cs" />
     <Compile Include="Abstract\IContactDAL.cs" />
     <Compile Include="Abstract\IContentDAL.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\Repositories\GenericRepository.cs" />
     <Compile Include="EntityFramework\EfAboutDAL.cs" />
+    <Compile Include="EntityFramework\EfAdminDAL.cs" />
     <Compile Include="EntityFramework\EfCategoryDAL.cs" />
     <Compile Include="EntityFramework\EfContactDal.cs" />
     <Compile Include="EntityFramework\EfContentDAL.cs" />

@@ -11,7 +11,7 @@ using System.Web.Mvc;
 
 namespace MVC_Proje_Kamp.Controllers
 {
-    [Authorize(Roles="B")]
+    [Authorize]
     public class AdminCategoryController : Controller
     {
         CategoryManager cm = new CategoryManager(new EfCategoryDAL());
